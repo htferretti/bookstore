@@ -15,7 +15,9 @@ dependencies = [
     "django-debug-toolbar (>=6.0.0,<7.0.0)",
     "flake8 (>=7.3.0,<8.0.0)",
     "black (>=25.9.0,<26.0.0)",
-    "factory-boy (>=3.3.3,<4.0.0)"
+    "factory-boy (>=3.3.3,<4.0.0)",
+    "update (>=0.0.1,<0.0.2)",
+    "gitpython (>=3.1.45,<4.0.0)"
 ]
 
 [dependency-groups]

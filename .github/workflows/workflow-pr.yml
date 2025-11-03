@@ -4,7 +4,7 @@ jobs:
 
   qa:
     name: Quality check
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
     env:
       DJANGO_ALLOWED_HOSTS: "localhost 127.0.0.1 [::1]"
       DEBUG: "1"

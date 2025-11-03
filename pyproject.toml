@@ -1,5 +1,5 @@
 [project]
-name = "boookstore"
+name = "bookstore"
 version = "0.1.0"
 description = "Bookstore API"
 authors = [

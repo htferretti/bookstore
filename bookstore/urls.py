@@ -18,8 +18,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, re_path, include
 
+from bookstore import views
+
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("update_server/", views.update, name="update"),
     re_path(r"^bookstore/(?P<version>(v1|v2))/", include("product.urls")),
     re_path(r"^bookstore/(?P<version>(v1|v2))/", include("order.urls")),
 ]

@@ -24,6 +24,12 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("update_server/", views.update, name="update"),
     path('hello/', views.hello_world, name='hello'),
-    re_path(r"^bookstore/(?P<version>(v1|v2))/", include("product.urls")),
-    re_path(r"^bookstore/(?P<version>(v1|v2))/", include("order.urls")),
+    re_path(
+        r"^bookstore/(?P<version>(v1|v2))/",
+        include(("product.urls", "product"), namespace="product")
+    ),
+    re_path(
+        r"^bookstore/(?P<version>(v1|v2))/",
+        include(("order.urls", "order"), namespace="order")
+    ),
 ]

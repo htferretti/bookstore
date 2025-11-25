@@ -23,7 +23,7 @@ from bookstore import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("update_server/", views.update, name="update"),
-    path('hello/', views.hello_world, name='hello'),
+    path("hello/", views.hello_world, name="hello"),
     re_path(r"^bookstore/(?P<version>(v1|v2))/", include("product.urls")),
     re_path(r"^bookstore/(?P<version>(v1|v2))/", include("order.urls")),
 ]

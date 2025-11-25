@@ -70,7 +70,7 @@ if DEBUG:
     except ImportError:
         pass
 
-ROOT_URLCONF = "bookstore.urls"
+ROOT_URLCONF = "urls"
 
 TEMPLATES = [
     {
